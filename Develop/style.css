@@ -25,10 +25,9 @@ textarea {
   white-space: pre-wrap;
 }
 
-.time-block {
+/* .time-block {
   text-align: center;
-  border-radius: 15px;
-}
+} */
 
 .row {
   white-space: pre-wrap;
@@ -63,9 +62,37 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  width: 8%;
+  height: 100px;
+  font-size: 20px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.custom-length {
+ width: 70%;
+ height: 100px;
+ font-size: 20px;
+}
+
+.container-time {
+  display: inline-block;
+  Width:100%;
+}
+
+.time-text {
+  border-top-style: dotted;
+  border-top-width: 2px;
+  border-bottom-style: dotted;
+  border-top-width: 2px;
+  border-left: none;
+  border-right-color: darkslategray;
+  height: 100px;
+  width: 20%;
+  text-align:right;
+  Padding-right: 10px;
+  font-size: 20px;
 }
