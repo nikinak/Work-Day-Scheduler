@@ -17,22 +17,102 @@ $("#currentDay").text(time);
 function saveEventNine() {
     event.preventDefault();
     var saveAppointment = document.getElementById("nine-am").value;
-    localStorage.setItem('saved-nine-am',saveAppointment);
+    localStorage.setItem('saved-nine',saveAppointment);
     console.log(saveAppointment);
 }
 
 function saveEventTen() {
     event.preventDefault();
     var saveAppointment = document.getElementById("ten-am").value;
-    localStorage.setItem('saved-ten-am',saveAppointment);
+    localStorage.setItem('saved-ten',saveAppointment);
     console.log(saveAppointment);
 }
 
-var pastAppointmentNine = localStorage.getItem("saved-nine-am")
+function saveEventEleven() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("eleven-am").value;
+    localStorage.setItem('saved-eleven',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventTwelve() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("twelve-pm").value;
+    localStorage.setItem('saved-twelve',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventOne() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("one-pm").value;
+    localStorage.setItem('saved-one',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventTwo() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("two-pm").value;
+    localStorage.setItem('saved-two',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventThree() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("three-pm").value;
+    localStorage.setItem('saved-three',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventFour() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("four-pm").value;
+    localStorage.setItem('saved-four',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventFive() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("five-pm").value;
+    localStorage.setItem('saved-five',saveAppointment);
+    console.log(saveAppointment);
+}
+
+function saveEventSix() {
+    event.preventDefault();
+    var saveAppointment = document.getElementById("six-pm").value;
+    localStorage.setItem('saved-six',saveAppointment);
+    console.log(saveAppointment);
+}
+
+var pastAppointmentNine = localStorage.getItem("saved-nine")
 document.getElementById("nine-am").value = pastAppointmentNine;
 
-var pastAppointmentTen = localStorage.getItem("saved-ten-am")
+var pastAppointmentTen = localStorage.getItem("saved-ten")
 document.getElementById("ten-am").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-eleven")
+document.getElementById("eleven-am").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-twelve")
+document.getElementById("twelve-pm").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-one")
+document.getElementById("one-pm").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-two")
+document.getElementById("two-pm").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-three")
+document.getElementById("three-pm").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-four")
+document.getElementById("four-pm").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-five")
+document.getElementById("five-pm").value = pastAppointmentTen;
+
+var pastAppointmentTen = localStorage.getItem("saved-six")
+document.getElementById("six-pm").value = pastAppointmentTen;
 
 console.log(currentTime);
 
