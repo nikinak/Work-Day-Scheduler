@@ -1,3 +1,11 @@
+// Added variables for time elements using moment.js
+var time  = moment().format('[Today is:] dddd[,] MMMM Do');
+var currentTime = new Date().getHours();
+
+// Added local storage variable
+var localSave = document.getElementById('local-storage-save');
+
+// Added time block variables
 var nineTime = document.getElementById('nine-am');
 var tenTime = document.getElementById('ten-am');
 var elevenTime = document.getElementById('eleven-am');
@@ -9,13 +17,10 @@ var fourTime = document.getElementById('four-pm');
 var fiveTime = document.getElementById('five-pm');
 var sixTime = document.getElementById('six-pm');
 
-var localSave = document.getElementById('local-storage-save');
-
-var time  = moment().format('[Today is:] dddd[,] MMMM Do');
-var currentTime = new Date().getHours();
-
+// function to show todays date
 $("#currentDay").text(time);
 
+// functions to save data to local storage upon save + make the save local sotrage paragraph appear
 function saveEventNine() {
     event.preventDefault();
     var saveAppointment = document.getElementById("nine-am").value;
@@ -96,6 +101,7 @@ function saveEventSix() {
     localSave.classList.remove('hide');
 }
 
+// variables and querys below revieve local storage data to page on refresh
 var pastAppointmentNine = localStorage.getItem("saved-nine")
 document.getElementById("nine-am").value = pastAppointmentNine;
 
@@ -128,6 +134,7 @@ document.getElementById("six-pm").value = pastAppointmentTen;
 
 console.log(currentTime);
 
+// function to reformat input fields to reflect a different color based on if it is in the past present or future
 function executeAt(time, func){
     setTimeout(func, time-currentTime);
     return true;
