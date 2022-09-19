@@ -13,6 +13,7 @@ textarea {
   padding: 10px;
 }
 
+/* revised bottom padding to match demo gif */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -22,10 +23,7 @@ textarea {
   padding-bottom: 20px;
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
+/* added class for local storage save so it only appears when a save happens + text formatting for local storage text*/
 .hide {
   display: none;
 }
@@ -40,79 +38,13 @@ textarea {
   font-weight: bolder;
 }
 
-/* button {
-  background: url(save.png);>
-} */
-
-/* .time-block {
-  text-align: center;
-} */
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: rgb(56, 56, 56);
-}
-
-.present {
-  background-color: #ff6961;
-  color: rgb(56, 56, 56);
-}
-
-.future {
-  background-color: #77dd77;
-  color: rgb(56, 56, 56);
-}
-
-.saveBtn {
-  border-left: 3px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  background-color: #06aed5;
-  color: white;
-  width: 8%;
-  height: 100px;
-  font-size: 40px;
-  vertical-align: middle;
-}
-
-.saveBtn:hover {
-  font-size: 50px;
-  transition: all 0.3s ease-out-in;
-  color:black;
-  border-bottom: none;
-  vertical-align: middle;
-}
-
-.custom-length {
- width: 70%;
- height: 100px;
- font-size: 20px;
- border: none;
- margin-bottom: 1px;
- padding-left: 5px;
- vertical-align: middle;
-}
-
+/* Added container for time elements to display horizontally */
 .container-time {
   display: inline-block;
   Width:100%;
 }
 
+/* Added classes to format time text*/
 .time-text-first {
   border-top-style: dashed;
   border-top-width: 2px;
@@ -142,3 +74,60 @@ textarea {
   vertical-align: middle;
 }
 
+
+/* below is provided code for indicating time - made text black to match demo image */
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: rgb(56, 56, 56);
+}
+
+.present {
+  background-color: #ff6961;
+  color: rgb(56, 56, 56);
+}
+
+.future {
+  background-color: #77dd77;
+  color: rgb(56, 56, 56);
+}
+
+/* added class for text input box */
+.custom-length {
+  width: 70%;
+  height: 100px;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 1px;
+  padding-left: 5px;
+  vertical-align: middle;
+ }
+
+/* Added formatting for save button to match demo image */
+.saveBtn {
+  border-left: 3px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  background-color: #06aed5;
+  color: white;
+  width: 8%;
+  height: 100px;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.saveBtn:hover {
+  font-size: 50px;
+  transition: all 0.3s ease-out-in;
+  color:black;
+  border-bottom: none;
+  vertical-align: middle;
+}
