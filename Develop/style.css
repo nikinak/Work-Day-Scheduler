@@ -19,11 +19,30 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding-bottom: 20px;
 }
 
 .description {
   white-space: pre-wrap;
 }
+
+.hide {
+  display: none;
+}
+
+#local-storage-save {
+  text-align: center;
+}
+
+.local-storage-text {
+  font-family: 'Courier New', monospace;
+  color: #ff6961;
+  font-weight: bolder;
+}
+
+/* button {
+  background: url(save.png);>
+} */
 
 /* .time-block {
   text-align: center;
@@ -48,34 +67,45 @@ textarea {
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: rgb(56, 56, 56);
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: rgb(56, 56, 56);
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 3px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
   background-color: #06aed5;
   color: white;
   width: 8%;
   height: 100px;
-  font-size: 20px;
+  font-size: 40px;
+  vertical-align: middle;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn:hover {
+  font-size: 50px;
+  transition: all 0.3s ease-out-in;
+  color:black;
+  border-bottom: none;
+  vertical-align: middle;
 }
 
 .custom-length {
  width: 70%;
  height: 100px;
  font-size: 20px;
+ border: none;
+ margin-bottom: 1px;
+ padding-left: 5px;
+ vertical-align: middle;
 }
 
 .container-time {
@@ -83,16 +113,32 @@ textarea {
   Width:100%;
 }
 
+.time-text-first {
+  border-top-style: dashed;
+  border-top-width: 2px;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  border-left: none;
+  border-right-color: darkslategray;
+  height: 100px;
+  width: 20%;
+  text-align:right;
+  padding-right: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
 .time-text {
-  border-top-style: dotted;
-  border-top-width: 2px;
-  border-bottom-style: dotted;
-  border-top-width: 2px;
+  border-top-style: none;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
   border-left: none;
   border-right-color: darkslategray;
   height: 100px;
   width: 20%;
   text-align:right;
   Padding-right: 10px;
-  font-size: 20px;
+  font-size: 30px;
+  vertical-align: middle;
 }
+

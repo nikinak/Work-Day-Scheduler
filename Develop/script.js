@@ -9,6 +9,8 @@ var fourTime = document.getElementById('four-pm');
 var fiveTime = document.getElementById('five-pm');
 var sixTime = document.getElementById('six-pm');
 
+var localSave = document.getElementById('local-storage-save');
+
 var time  = moment().format('[Today is:] dddd[,] MMMM Do');
 var currentTime = new Date().getHours();
 
@@ -19,6 +21,7 @@ function saveEventNine() {
     var saveAppointment = document.getElementById("nine-am").value;
     localStorage.setItem('saved-nine',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventTen() {
@@ -26,6 +29,7 @@ function saveEventTen() {
     var saveAppointment = document.getElementById("ten-am").value;
     localStorage.setItem('saved-ten',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventEleven() {
@@ -33,6 +37,7 @@ function saveEventEleven() {
     var saveAppointment = document.getElementById("eleven-am").value;
     localStorage.setItem('saved-eleven',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventTwelve() {
@@ -40,6 +45,7 @@ function saveEventTwelve() {
     var saveAppointment = document.getElementById("twelve-pm").value;
     localStorage.setItem('saved-twelve',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventOne() {
@@ -47,6 +53,7 @@ function saveEventOne() {
     var saveAppointment = document.getElementById("one-pm").value;
     localStorage.setItem('saved-one',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventTwo() {
@@ -54,6 +61,7 @@ function saveEventTwo() {
     var saveAppointment = document.getElementById("two-pm").value;
     localStorage.setItem('saved-two',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventThree() {
@@ -61,6 +69,7 @@ function saveEventThree() {
     var saveAppointment = document.getElementById("three-pm").value;
     localStorage.setItem('saved-three',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventFour() {
@@ -68,6 +77,7 @@ function saveEventFour() {
     var saveAppointment = document.getElementById("four-pm").value;
     localStorage.setItem('saved-four',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventFive() {
@@ -75,6 +85,7 @@ function saveEventFive() {
     var saveAppointment = document.getElementById("five-pm").value;
     localStorage.setItem('saved-five',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 function saveEventSix() {
@@ -82,6 +93,7 @@ function saveEventSix() {
     var saveAppointment = document.getElementById("six-pm").value;
     localStorage.setItem('saved-six',saveAppointment);
     console.log(saveAppointment);
+    localSave.classList.remove('hide');
 }
 
 var pastAppointmentNine = localStorage.getItem("saved-nine")
