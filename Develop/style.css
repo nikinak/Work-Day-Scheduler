@@ -131,3 +131,30 @@ textarea {
   border-bottom: none;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 700px) {
+  .saveBtn {
+    font-size: 20px;
+    height:50px;
+  }
+
+  .saveBtn:hover {
+    font-size: 30px;
+  }
+
+  .custom-length {
+    font-size: 10px;
+    height:50px;
+  }
+
+  .time-text-first {
+    font-size: 20px;
+    height:50px;
+  }
+
+  .time-text {
+    font-size: 20px;
+    height:50px;
+  }
+
+}
