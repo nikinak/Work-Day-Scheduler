@@ -10,7 +10,7 @@ Screenshot:
 
 [Link][1] to work day scheduler.
 
-[1]: https://nikinak.github.io/Coding-Quiz/ "Link"
+[1]: https://nikinak.github.io/Work-Day-Scheduler/ "Link"
 
 ## Installation
 
@@ -22,6 +22,7 @@ To enter an event the user should enter into "Add Event" input box and type in t
 The user the can refresh or close their browser and the data for their events wil be saved. The user will know it has been saved because a notice of saved to local storage will be displayed.
 
 The time blocks will highlight what time it is - gray for past, red for present, green for future. If the user pulls up the page before 9am then all time blocks will be green, and if they log in after 6PM then all time blocks will apear as gray.
+
 
 ## Credits
 N/A
